@@ -1,12 +1,13 @@
 /* Comment Block */
 -- Comment
-/*
+/* Basics: 
 USE database
 SELECT data (* for all)
 FROM table
 WHERE condition (LIKE string, BETWEEN x AND y, < > = !=)
 ORDER BY column (DESC for descending order)
-
+JOIN table
+ON column = column
 */
 USE om;
 
