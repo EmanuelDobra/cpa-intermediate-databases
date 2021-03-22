@@ -57,7 +57,7 @@ INSERT INTO clinic VALUES
 
 CREATE TABLE private_info
 (
-	dog_license_id				varchar(5)	primary key,
+	dog_license_id				varchar(5)	 key,
     rabbies_vaccinated			boolean,									
     spayed_or_neutered			boolean									
 );
@@ -77,3 +77,9 @@ SELECT dog_name, visit_date, visit_cost
 FROM dog
 	JOIN clinic
     ON dog.dog_license_id = clinic.dog_license_id;
+    
+SELECT brand_name, customer_last_name
+FROM Brand
+	JOIN Product
+    ON Brand.yourIDThing = Produce.yourIDThing
+	
