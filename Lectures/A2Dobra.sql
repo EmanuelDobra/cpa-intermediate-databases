@@ -82,7 +82,7 @@ INSERT INTO guests_overview VALUES
 (105, 3.7, 124),
 (106, 3.9, 235);
 
-/*
+
 -- 1
 SELECT guest_firstN, guest_lastN, guest_total_podcasts_done, guest_personal_rating
 FROM guests g
@@ -106,4 +106,3 @@ SELECT p.podcast_id, p.podcast_rating, g.guest_firstN, g.guest_lastN, go.guest_p
 FROM guests_overview go, guests g, podcastguests pg, podcasts p
     WHERE go.guest_id = g.guest_id AND g.guest_id = pg.guest_id AND pg.podcast_id = p.podcast_id
 		ORDER BY p.podcast_id;
-*/
